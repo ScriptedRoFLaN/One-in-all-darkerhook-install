@@ -13,13 +13,13 @@ elif [ -x "$(command -v apt)" ] && [ ! -x "$(command -v git)" ]; then
 fi
 
 #
-# Clone cathook
+# Clone Rosnehook
 #
 
-git clone --depth 1 https://github.com/explowz/cathook
+git clone --depth 1 https://github.com/RosneBurgerworks/cathook
 
 #
-# Run cathook's install all script
+# Run Rosnehook's install all script
 #
 
 pushd cathook
