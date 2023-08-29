@@ -16,7 +16,7 @@ fi
 # Clone Rosnehook
 #
 
-git clone --depth 1 https://github.com/RosneBurgerworks/cathook
+git clone --depth 1 https://github.com/RosneBurgerworks/rosnehook
 
 #
 # Run Rosnehook's install all script
