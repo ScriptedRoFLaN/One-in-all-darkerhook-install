@@ -22,6 +22,6 @@ git clone --depth 1 https://github.com/RosneBurgerworks/rosnehook
 # Run Rosnehook's install all script
 #
 
-pushd cathook
+pushd rosnehook
 bash ./install-all
 popd
