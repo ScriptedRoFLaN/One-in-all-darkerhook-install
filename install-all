@@ -13,6 +13,26 @@ elif [ -x "$(command -v apt)" ] && [ ! -x "$(command -v git)" ]; then
 fi
 
 #
+# Install GitHub CLI (gh)
+#
+
+if [ ! -x "$(command -v gh)" ]; then
+  if [ -x "$(command -v brew)" ]; then
+    brew install gh
+  elif [ -x "$(command -v apt)" ]; then
+    $SUDO apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+    $SUDO apt-add-repository https://cli.github.com/packages
+    $SUDO apt update
+    $SUDO apt install gh -y
+  elif [ -x "$(command -v yum)" ]; then
+    $SUDO rpm -Uvh https://cli.github.com/packages/github-cli-release.rpm
+    $SUDO yum install gh -y
+  elif [ -x "$(command -v pacman)" ]; then
+    $SUDO pacman -S --needed --noconfirm gh
+  fi
+fi
+
+#
 # Clone Rosnehook
 #
 
