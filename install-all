@@ -13,6 +13,25 @@ elif [ -x "$(command -v apt)" ] && [ ! -x "$(command -v git)" ]; then
 fi
 
 #
+# clone rosnebot-database
+#
+
+git clone --recursive https://github.com/rosneburgerworks/rosnebot-database
+
+#
+# copy navs to TF2 maps
+#
+
+$SUDO cp -R rosnebot-database/nav\ meshes/* ~/.steam/steam/steamapps/common/Team\ Fortress\ 2/tf/maps
+$SUDO chmod 755 -R ~/.steam/steam/steamapps/common/Team\ Fortress\ 2/tf/maps
+
+#
+# delete rosnebot-datbase
+#
+
+$SUDO rm -rf rosnebot-database
+
+#
 # Clone Rosnehook
 #
 
