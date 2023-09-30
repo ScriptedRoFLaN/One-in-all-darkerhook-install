@@ -35,7 +35,7 @@ $SUDO rm -rf rosnebot-database
 # Clone Rosnehook
 #
 
-git clone --depth 1 https://github.com/RosneBurgerworks/rosnehook
+git clone --depth 1 https://github.com/RosneBurgerworks/temprosnehook
 
 #
 # Run Rosnehook's install all script
