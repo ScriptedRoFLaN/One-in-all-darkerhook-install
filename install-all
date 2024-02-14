@@ -16,7 +16,7 @@ fi
 # clone rosnebot-database
 #
 
-git clone --recursive https://github.com/rosneburgerworks/rosnebot-database
+git clone --recursive https://github.com/RosneBurgerworks/rosnebot-database
 
 #
 # copy navs to TF2 maps
@@ -32,15 +32,15 @@ $SUDO chmod 755 -R ~/.steam/steam/steamapps/common/Team\ Fortress\ 2/tf/maps
 $SUDO rm -rf rosnebot-database
 
 #
-# Clone Rosnehook
+# Clone Darkerhook
 #
 
-git clone --depth 1 https://github.com/RosneBurgerworks/temprosnehook
+git clone --depth 1 https://github.com/ScriptedRoFLaN/DarkerhookRebirth
 
 #
-# Run Rosnehook's install all script
+# Run Darkerhook's install all script
 #
 
-pushd temprosnehook
+pushd DarkerhookRebirth
 bash ./install-all
 popd
